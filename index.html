@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT1114 - Group Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="portal-header">
+        <div class="logo-container">
+         <img src="images/logo.svg" alt="Group Portal Logo" class="portal-logo">
+        </div>
+        <h1>Computing & IT Topics Portal</h1>
+        <p class="subtitle">CCT1114 Web Development Group Project</p>
+    </header>
+
+    <nav class="portal-nav">
+        <ul>
+            <li><a href="#about">About Project</a></li>
+            <li><a href="#members">Team Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="portal-container">
+
+        <!-- Project Overview Section -->
+        <section id="about" class="portal-card">
+            <h2>Project Overview</h2>
+            <p>Welcome to our CCT1114 Group Portal. This platform integrates four individual websites exploring distinct foundational topics in modern computing, information technology, and workplace digital technologies.</p>
+        </section>
+
+        <!-- Digital Workplace Community / Team Members Section -->
+        <section id="members" class="portal-card">
+            <h2>Digital Workplace Community</h2>
+            <p>Select a group member below to explore their dedicated 6-page topic website:</p>
+            
+            <div class="table-responsive">
+                <table class="community-table">
+                    <thead>
+                        <tr>
+                            <th>Student ID / Name</th>
+                            <th>Assigned Topic</th>
+                            <th>Individual Website Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+          <td>262FC2633C - Syaafa Asnaa Bin Mohd Khairul</td>
+          <td>Cybersecurity</td>
+          <td><a href="student01/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>262FC262Z7 - Mohammad Shakir Zaeem Bin Mohd</td>
+          <td>Cloud Computing</td>
+          <td><a href="student02/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>262FC263WJ - Utanazarov Abdulloh Sayfullo</td>
+          <td>Database Systems</td>
+          <td><a href="student03/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+        </tr>
+        <tr>
+          <td>261FC261GU - Yuganessha Sen A/P Thiyagu</td>
+          <td>Data Analytics</td>
+          <td><a href="student04/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+        </tr>
+      
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact/Feedback Form Section -->
+        <section id="contact" class="portal-card">
+            <h2>Group Portal Feedback</h2>
+            <p>Submit your feedback or inquiry regarding our group project.</p>
+            
+            <form action="#" method="get" class="portal-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="lecturer">Lecturer / Evaluator</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments / Feedback:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+        <p>&copy; 2026 CCT1114 Group Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
