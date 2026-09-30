@@ -1,78 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community - Digital Workplace Portal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community & Hub - Cybersecurity</title>
+  <link rel="stylesheet" href="style_student03.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>Cybersecurity in the Digital Workplace</h1>
-            <p>Connect with team members and explore related workplace technology domains.</p>
+  <!-- Header / Navigation -->
+  <header>
+    <h1>Cybersecurity Community & Hub</h1>
+    <p>Collaborating across digital workplace readiness domains.</p>
+    <nav>
+      <a href="page1.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="action.html">Tech in Action</a>
+      <a href="lifelong.html">Lifelong Learning</a>
+      <a href="careers.html">Careers</a>
+      <a href="community.html" class="active">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Group Members Grid Section -->
+    <section class="card">
+      <h2>Project Collaborators</h2>
+      <p>Explore the specialized technology domains developed by our group members:</p>
+      
+      <div class="team-grid">
+        <div class="member-card">
+          <div class="member-info">
+            <h3>Yuganessha</h3>
+            <span class="student-id">ID: 261FC261GU</span>
+            <p class="topic-tag">Cloud Computing</p>
+          </div>
+          <a href="../student01/page1.html" class="portal-link">View Module &rarr;</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="learn.html">Learn</a></li>
-                <li><a href="action.html">Tech in Action</a></li>
-                <li><a href="learning.html">Lifelong Learning</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="community.html" class="active">Community</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
+        <div class="member-card active-member">
+          <div class="member-info">
+            <h3>Abdulloh</h3>
+            <span class="student-id">ID: 262FC263WJ</span>
+            <p class="topic-tag">Cybersecurity (Lead)</p>
+          </div>
+          <a href="../student03/page1.html" class="portal-link">Current Module</a>
+        </div>
 
-        <!-- Required Non-Functional HTML Form -->
-        <section class="card">
-            <h2>Inquire / Submit Feedback</h2>
-            <p>Have questions about this cybersecurity module? Contact us using the form below:</p>
+        <div class="member-card">
+          <div class="member-info">
+            <h3>Mohammad Shakir Zaeem</h3>
+            <span class="student-id">ID: 262FC262Z7</span>
+            <p class="topic-tag">Artificial Intelligence (AI)</p>
+          </div>
+          <a href="../student02/page1.html" class="portal-link">View Module &rarr;</a>
+        </div>
 
-            <form class="feedback-form">
-                <div class="form-group">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-                </div>
+        <div class="member-card">
+          <div class="member-info">
+            <h3>Syaafa Asnaa</h3>
+            <span class="student-id">ID: 262FC2633C</span>
+            <p class="topic-tag">Data Analytics</p>
+          </div>
+          <a href="../student04/page1.html" class="portal-link">View Module &rarr;</a>
+        </div>
+      </div>
+    </section>
 
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
+    <!-- Group Portal Quick Link -->
+    <section class="card portal-cta">
+      <div>
+        <h2>Digital Workplace Readiness Portal</h2>
+        <p>Return to the primary group landing page to view all project deliverables.</p>
+      </div>
+      <a href="../index.html" class="btn">Back to Main Portal</a>
+    </section>
 
-                <div class="form-group">
-                    <label for="topic">Topic of Interest:</label>
-                    <select id="topic" name="topic">
-                        <option value="network">Network Defense</option>
-                        <option value="certifications">Security Certifications</option>
-                        <option value="careers">Career Pathways</option>
-                    </select>
-                </div>
+    <!-- Feedback Form -->
+    <section class="card">
+      <h2>Inquire / Submit Feedback</h2>
+      <p>Have questions regarding cybersecurity operations? Submit your query below:</p>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name">
 
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Type your inquiry here..."></textarea>
-                </div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email address">
 
-                <button type="button" class="submit-btn">Submit Inquiry</button>
-            </form>
-        </section>
+        <label for="topic">Topic of Interest:</label>
+        <select id="topic">
+          <option>Network Defense</option>
+          <option>Cloud Security</option>
+          <option>Data Privacy</option>
+        </select>
 
-        <section class="card">
-            <h2>References</h2>
-            <p class="reference-item">
-                World Economic Forum. (2023). <em>Global Cybersecurity Outlook 2023</em>. WEF.
-            </p>
-        </section>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Type your inquiry here..."></textarea>
 
-    </div>
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Digital Workplace Portal | Cybersecurity Module</p>
-    </footer>
+    <!-- References Section -->
+    <section class="card">
+      <h2>References</h2>
+      <p>World Economic Forum. (2023). <em>Global Cybersecurity Outlook 2023</em>. WEF.</p>
+    </section>
+  </main>
 
 </body>
 </html>
