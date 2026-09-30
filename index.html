@@ -1,121 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCT1114 - Group Portal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCT1114 Group Project Portal</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header class="portal-header">
-        <div class="logo-container">
-         <img src="images/logo.svg" alt="Group Portal Logo" class="portal-logo">
+  <!-- Navigation Header -->
+  <header class="portal-header">
+    <div class="portal-container header-content">
+      <div class="logo-area">
+        <img src="images/logo.svg" alt="Group Portal Logo" class="portal-logo">
+        <h1 class="portal-title">CCT1114 Group Portal</h1>
+      </div>
+      <nav class="portal-nav">
+        <a href="#members" class="nav-link">Team Members</a>
+        <a href="#contact" class="nav-link">Feedback</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Introduction Section -->
+  <section class="portal-hero">
+    <div class="portal-container">
+      <h2>Welcome to Our Computing Technology Portal</h2>
+      <p>Explore individual websites created by our group members covering key domains in modern technology.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="portal-container">
+
+    <!-- Team Members Table Section -->
+    <section id="members" class="portal-card">
+      <h2>Group Members & Assigned Topics</h2>
+      <div class="table-responsive">
+        <table class="portal-table">
+          <thead>
+            <tr>
+              <th>Member Name</th>
+              <th>Assigned Topic</th>
+              <th>Website Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Syaafa Asnaa</td>
+              <td>Data Analytics</td>
+              <td><a href="student01/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+            </tr>
+            <tr>
+              <td>Mohammad Shakir Zaeem</td>
+              <td>Artificial Intelligence</td>
+              <td><a href="student02/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+            </tr>
+            <tr>
+              <td>Utanazarov Abdulloh</td>
+              <td>Cybersecurity</td>
+              <td><a href="student03/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+            </tr>
+            <tr>
+              <td>Yuganessha Sen</td>
+              <td>Cloud Computing</td>
+              <td><a href="student04/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contact/Feedback Form Section -->
+    <section id="contact" class="portal-card">
+      <h2>Group Portal Feedback</h2>
+      <p>Submit your feedback or inquiry regarding our group topics below:</p>
+
+      <form action="#" method="get" class="portal-form">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
         </div>
-        <h1>Computing & IT Topics Portal</h1>
-        <p class="subtitle">CCT1114 Web Development Group Project</p>
-    </header>
 
-    <nav class="portal-nav">
-        <ul>
-            <li><a href="#about">About Project</a></li>
-            <li><a href="#members">Team Members</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
 
-    <!-- Main Content Area -->
-    <main class="portal-container">
+        <div class="form-group">
+          <label for="topic">Select Topic of Interest:</label>
+          <select id="topic" name="topic" required>
+            <option value="" disabled selected>-- Select a Topic --</option>
+            <option value="data-analytics">Data Analytics</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="cloud-computing">Cloud Computing</option>
+          </select>
+        </div>
 
-        <!-- Project Overview Section -->
-        <section id="about" class="portal-card">
-            <h2>Project Overview</h2>
-            <p>Welcome to our CCT1114 Group Portal. This platform integrates four individual websites exploring distinct foundational topics in modern computing, information technology, and workplace digital technologies.</p>
-        </section>
+        <div class="form-group">
+          <label for="message">Message / Feedback:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+        </div>
 
-        <!-- Digital Workplace Community / Team Members Section -->
-        <section id="members" class="portal-card">
-            <h2>Digital Workplace Community</h2>
-            <p>Select a group member below to explore their dedicated 6-page topic website:</p>
-            
-            <div class="table-responsive">
-                <table class="community-table">
-                    <thead>
-                        <tr>
-                            <th>Student ID / Name</th>
-                            <th>Assigned Topic</th>
-                            <th>Individual Website Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-        <tr>
-          <td>262FC2633C - Syaafa Asnaa Bin Mohd Khairul</td>
-          <td>Cybersecurity</td>
-          <td><a href="student01/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>262FC262Z7 - Mohammad Shakir Zaeem Bin Mohd</td>
-          <td>Cloud Computing</td>
-          <td><a href="student02/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>262FC263WJ - Utanazarov Abdulloh Sayfullo</td>
-          <td>Database Systems</td>
-          <td><a href="student03/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-        </tr>
-        <tr>
-          <td>261FC261GU - Yuganessha Sen A/P Thiyagu</td>
-          <td>Data Analytics</td>
-          <td><a href="student04/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-        </tr>
-      
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <button type="submit" class="submit-btn">Send Feedback</button>
+      </form>
+    </section>
 
-        <!-- Contact/Feedback Form Section -->
-        <section id="contact" class="portal-card">
-            <h2>Group Portal Feedback</h2>
-            <p>Submit your feedback or inquiry regarding our group project.</p>
-            
-            <form action="#" method="get" class="portal-form">
-                <div class="form-group">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-                </div>
+  </main>
 
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="role">Role:</label>
-                    <select id="role" name="role">
-                        <option value="student">Student</option>
-                        <option value="lecturer">Lecturer / Evaluator</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="comments">Comments / Feedback:</label>
-                    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit Feedback</button>
-            </form>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="portal-footer">
-        <p>&copy; 2026 CCT1114 Group Project. All rights reserved.</p>
-    </footer>
+  <!-- Portal Footer -->
+  <footer class="portal-footer">
+    <div class="portal-container">
+      <p>&copy; 2026 CCT1114 Group Project Portal. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
