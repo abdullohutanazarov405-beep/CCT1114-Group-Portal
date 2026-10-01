@@ -130,3 +130,14 @@ footer {
     padding-left: 36px;
     margin-bottom: 12px;
 }
+
+.website-link {
+    color: #38bdf8;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.website-link:hover {
+    color: #7dd3fc;
+}
