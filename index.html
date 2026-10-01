@@ -1,120 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCT1114 Group Project Portal</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT1114 Group Project Portal</title>
+
+<link rel="stylesheet" href="style.css">    
 </head>
+
 <body>
 
-  <!-- Navigation Header -->
-  <header class="portal-header">
-    <div class="portal-container header-content">
-      <div class="logo-area">
-        <img src="images/logo.svg" alt="Group Portal Logo" class="portal-logo">
-        <h1 class="portal-title">CCT1114 Group Portal</h1>
-      </div>
-      <nav class="portal-nav">
-        <a href="#members" class="nav-link">Team Members</a>
-        <a href="#contact" class="nav-link">Feedback</a>
-      </nav>
-    </div>
-  </header>
+<header>
+    <h1>Welcome to Our Computing Technology Portal</h1>
 
-  <!-- Hero / Introduction Section -->
-  <section class="portal-hero">
-    <div class="portal-container">
-      <h2>Welcome to Our Computing Technology Portal</h2>
-      <p>Explore individual websites created by our group members covering key domains in modern technology.</p>
-    </div>
-  </section>
+    <p>
+        Explore individual websites created by our group members
+        covering key domains in modern technology.
+    </p>
+</header>
 
-  <!-- Main Content Area -->
-  <main class="portal-container">
 
-    <!-- Team Members Table Section -->
-    <section id="members" class="portal-card">
-      <h2>Group Members & Assigned Topics</h2>
-      <div class="table-responsive">
-        <table class="portal-table">
-          <thead>
-            <tr>
-              <th>Member Name</th>
-              <th>Assigned Topic</th>
-              <th>Website Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Syaafa Asnaa</td>
-              <td>Data Analytics</td>
-              <td><a href="student01/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-            </tr>
-            <tr>
-              <td>Mohammad Shakir Zaeem</td>
-              <td>Artificial Intelligence</td>
-              <td><a href="student02/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-            </tr>
-            <tr>
-              <td>Utanazarov Abdulloh</td>
-              <td>Cybersecurity</td>
-              <td><a href="student03/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-            </tr>
-            <tr>
-              <td>Yuganessha Sen</td>
-              <td>Cloud Computing</td>
-              <td><a href="student04/page1.html" class="portal-btn">Visit Website &rarr;</a></td>
-            </tr>
-          </tbody>
+<main class="container">
+
+    <section class="section">
+
+        <h2>Group Members &amp; Assigned Topics</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Assigned Topic</th>
+                    <th>Website Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- SYAAFA -->
+                <tr>
+                    <td>Syaafa Asnaa</td>
+                    <td>Data Analytics</td>
+                    <td>
+                        <a class="button" href="syaafa/index.html">
+                            Visit Website →
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- SYAKIR -->
+                <tr>
+                    <td>Mohammad Syakir Zaeem</td>
+                    <td>Artificial Intelligence</td>
+                    <td>
+                        <a class="button" href="syakir/index.html">
+                            Visit Website →
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- ABDULLAH -->
+                <tr>
+                    <td>Utanazarov Abdulloh</td>
+                    <td>Cybersecurity</td>
+                    <td>
+                        <a class="button" href="abdullah/page1.html">
+                             Visit Website ➜
+                      </a>   
+                        
+                    </td>
+                </tr>
+
+                <!-- YUGANESSHA -->
+                <tr>
+                    <td>Yuganessha Sen</td>
+                    <td>Cloud Computing</td>
+                    <td>
+                        <a class="button" href="yuganessha/index.html">
+                            Visit Website →
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+
         </table>
-      </div>
+
     </section>
 
-    <!-- Contact/Feedback Form Section -->
-    <section id="contact" class="portal-card">
-      <h2>Group Portal Feedback</h2>
-      <p>Submit your feedback or inquiry regarding our group topics below:</p>
 
-      <form action="#" method="get" class="portal-form">
-        <div class="form-group">
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-        </div>
+    <section class="info">
 
-        <div class="form-group">
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
+        <h2>About Our Group Project</h2>
 
-        <div class="form-group">
-          <label for="topic">Select Topic of Interest:</label>
-          <select id="topic" name="topic" required>
-            <option value="" disabled selected>-- Select a Topic --</option>
-            <option value="data-analytics">Data Analytics</option>
-            <option value="ai">Artificial Intelligence</option>
-            <option value="cybersecurity">Cybersecurity</option>
-            <option value="cloud-computing">Cloud Computing</option>
-          </select>
-        </div>
+        <p>
+            This portal is part of our CCT1114 group project. Each group
+            member has developed an individual website focusing on a
+            different area of computing technology. Use the links above
+            to explore Data Analytics, Artificial Intelligence,
+            Cybersecurity and Cloud Computing.
+        </p>
 
-        <div class="form-group">
-          <label for="message">Message / Feedback:</label>
-          <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">Send Feedback</button>
-      </form>
     </section>
 
-  </main>
+</main>
 
-  <!-- Portal Footer -->
-  <footer class="portal-footer">
-    <div class="portal-container">
-      <p>&copy; 2026 CCT1114 Group Project Portal. All rights reserved.</p>
-    </div>
-  </footer>
+
+<footer>
+    <p>CCT1114 Group Project | 2026</p>
+</footer>
 
 </body>
+
 </html>
